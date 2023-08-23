@@ -108,7 +108,7 @@ def main():
 
     # inserting dataframes into database
     engine = create_engine("mysql+pymysql://user:"
-                           f"{quote_plus('pass')}@localhost:port/mbc_training")
+                           f"{quote_plus('pass')}@localhost:port/dbname")
 
     df_list = [movie_info, cast_df, crew_df,
                keywords_df, belongs_to_collection, genres_df,
