@@ -184,7 +184,7 @@ Each function created was unit tested with various test cases such as datatypes,
 * ERD
 * <div align="center">
   <a href="https://github.com/GitQandil/mbc_training">
-    <img src="images/mbc_training.png" alt="Logo" width="2000" height="230">
+    <img src="images/mbc_training.png" alt="Logo" width="2000" height="270">
   </a>
 * Belongs to Collection table
 
