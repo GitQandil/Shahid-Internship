@@ -188,7 +188,7 @@ ERD
 <br />
 
   <a href="https://github.com/GitQandil/mbc_training">
-    <img src="images/mbc_training.png" alt="Logo" width="2000" height="250">
+    <img src="images/mbc_training.png" alt="Logo" width="2000" height="260">
   </a>
 </div>
 
