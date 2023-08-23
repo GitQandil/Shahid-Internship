@@ -25,7 +25,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/GitQandil/mbc_training">
-    <img src="last/logo/MBC_Group.png" alt="Logo" width="80" height="80">
+    <img src="logo/MBC_Group.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Best-README-Template</h3>
