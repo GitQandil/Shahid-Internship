@@ -181,11 +181,17 @@ Files were linted using pytest in order to check deployment quality insuring a s
 ## Unit Testing
 Each function created was unit tested with various test cases such as datatypes, functionality, and expected output
 ## SQL Tables Creation
-* ERD
-* <div align="center">
+
+<div align="center">
+ERD
+<br />
+<br />
+
   <a href="https://github.com/GitQandil/mbc_training">
-    <img src="images/mbc_training.png" alt="Logo" width="2000" height="270">
+    <img src="images/mbc_training.png" alt="Logo" width="2000" height="250">
   </a>
+</div>
+
 * Belongs to Collection table
 
         create table belongs_to_collection
