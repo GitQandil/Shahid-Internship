@@ -6,7 +6,7 @@
 
 <h3 align="center">MBC Training</h3>
   <p align="center">
-    <a href="https://github.com/GitQandil//"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/GitQandil/mbc_training"><strong>Explore the docs »</strong></a>
     <br />
     <a href="https://github.com/GitQandil/mbc_training">View Demo</a>
     ·
