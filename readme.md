@@ -336,7 +336,7 @@ The DataFrames were inserted into the tables created
 
 
 ## Summary
-The projected centered around the transformation of the movies dataset into a valuable resource of analysis. Through various data engineering concepts, such as data cleaning, data extraction from JSON columns, and data processing. The creation of a structured database enabled the organized storage of this data. The culmination of the project involved integrating the refined dataframes seamlessly into the database, paving the way for in-depth analysis and insights.
+The project centered around the transformation of the movies dataset into a valuable resource of analysis. Through various data engineering concepts, such as data cleaning, data extraction from JSON columns, and data processing. The creation of a structured database enabled the organized storage of this data. The culmination of the project involved integrating the refined dataframes seamlessly into the database, paving the way for in-depth analysis and insights.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
