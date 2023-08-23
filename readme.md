@@ -58,7 +58,7 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
     </li>
-    <li><a href="#utilites">Utilites</a></li>
+    <li><a href="#utilites">Utilities</a></li>
     <li><a href="#mysql-schema">MySQL Schema</a></li>
     <li><a href="#data-cleaning">Data Cleaning</a></li>
     <li><a href="#data-preprocessing">Data Preprocessing</a></li>
@@ -161,8 +161,8 @@ This is an example of how to list things you need to use the software and how to
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Utilites
-Utilities python file was created that has UDF's in order to automate the proecess of data cleaning, processing, and preprocessing
+## Utilities
+Utilities python file was created that has UDF's in order to automate the process of data cleaning, processing, and preprocessing
 
 ## MySQL Schema
     create schema mbc_training
@@ -351,7 +351,7 @@ ERD
       );
 
 ## Inserting DataFrames to Database
-The DataFrames were inserted to the tables created
+The DataFrames were inserted into the tables created
 ## Docker Containerization
 
 
@@ -362,7 +362,7 @@ The DataFrames were inserted to the tables created
 
 
 ## Summary
-Overall this project  focused on combining various related csv files into a unified database using pandas and mysql.
+The projected centered around the transformation of the movies dataset into a valuable resource of analysis. Through various data engineering concepts, such as data cleaning, data extraction from JSON columns, and data processing. The creation of a structured database enabled the organized storage of this data. The culmination of the project involved integrating the refined dataframes seamlessly into the database, paving the way for in-depth analysis and insights.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
