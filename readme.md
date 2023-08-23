@@ -163,6 +163,7 @@ This is an example of how to list things you need to use the software and how to
     
     * ratings_small.csv: The subset of 100,000 ratings from 700 users on 9,000 movies.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Utilites
 Utilities python file was created that has UDF's in order to automate the proecess of data cleaning, processing, and preprocessing
