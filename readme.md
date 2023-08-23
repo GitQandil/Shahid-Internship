@@ -25,22 +25,18 @@
 <br />
 <div align="center">
   <a href="https://github.com/GitQandil/mbc_training">
-    <img src="logo/MBC_Group.png" alt="Logo" width="120" height="80">
+    <img src="images/MBC_Group.png" alt="Logo" width="120" height="80">
   </a>
 
-<h3 align="center">Best-README-Template</h3>
-
+<h3 align="center">MBC Training</h3>
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    <a href="https://github.com/GitQandil/mbc_training/"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/GitQandil/mbc_training">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/GitQandil/mbc_training/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/GitQandil/mbc_training/issues">Request Feature</a>
   </p>
 </div>
 
@@ -60,15 +56,18 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#utilites">Utilites</a></li>
+    <li><a href="#mysql-schema">MySQL Schema</a></li>
+    <li><a href="#data-cleaning">Data Cleaning</a></li>
+    <li><a href="#data-preprocessing">Data Preprocessing</a></li>
+    <li><a href="#data-processing">Data Processing</a></li>
+    <li><a href="#linting">Linting</a></li>
+    <li><a href="#unit-testing">Unit Testing</a></li>
+    <li><a href="#sql-tables-creation">SQL Tables Creation</a></li>
+    <li><a href="#inserting-dataframes-to-database">Inserting DataFrames to Database</a></li>
+    <li><a href="#docker-containerization">Docker Containerization</a></li>
   </ol>
 </details>
 
@@ -77,18 +76,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This Project applies multiple Data Engineering Concepts on the Movies Dataset on kaggle in order to create a database from multiple csv files and interconnect them for business reporting
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+These concepts include:
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+* EDA
+* ETL
+* Data Processing
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,16 +90,11 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Python][Python.py]][Python-url]
+* [![MySQL][MySQL]][MySQL-url]
+* [![Docker][Docker]][Docker-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,89 +103,255 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This Projects needs MySQL and Python Installation
 
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Install Homebrew using your terminal by the below command
   ```sh
-  npm install npm@latest -g
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  ```
+* Install the latest version of a MYSQL database using brew, run:
+  ```sh
+  brew install mysql
+  ```
+* Run:
+  ```sh
+  mysql_secure_installation
   ```
 
-### Installation
+* Install the latest version of a MYSQL database using brew, run:
+  ```sh
+  brew install mysql
+  ```
+  The procedure can take a while, but it gives a lot of power to make sure you get the best defaults out of the box
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+* Since we used brew services start mysql to start MySQL, your laptop will re-start it at reboot. You can run:
+  ```sh
+  brew services stop mysql
+  ```
+* To Start MYSQL
+    ```sh
+      brew services start mysql
+    ```
+* Install python3 on your local machine using the below command:
+    ```sh
+    brew install python
+    ```
+* Download The movies Dataset from kaggle
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+   [![Kaggle][Kaggle]][Kaggle-url]
+* Context
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+    * These files contain metadata for all 45,000 movies listed in the Full MovieLens Dataset. 
+    * The dataset consists of movies released on or before July 2017. Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.
+    * This dataset also has files containing 26 million ratings from 270,000 users for all 45,000 movies. Ratings are on a scale of 1-5 and have been obtained from the official GroupLens website.
+    Content
 
+* This dataset consists of the following files:
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+    * movies_metadata.csv: The main Movies Metadata file. Contains information on 45,000 movies featured in the Full MovieLens dataset. Features include posters, backdrops, budget, revenue, release dates, languages, production countries and companies.
+    
+    * keywords.csv: Contains the movie plot keywords for our MovieLens movies. Available in the form of a stringified JSON Object.
+    
+   *  credits.csv: Consists of Cast and Crew Information for all our movies. Available in the form of a stringified JSON Object.
+    
+    * links.csv: The file that contains the TMDB and IMDB IDs of all the movies featured in the Full MovieLens dataset.
+    
+    * links_small.csv: Contains the TMDB and IMDB IDs of a small subset of 9,000 movies of the Full Dataset.
+    
+    * ratings_small.csv: The subset of 100,000 ratings from 700 users on 9,000 movies.
 
 
+## Utilites
+Utilities python file was created that has UDF's in order to automate the proecess of data cleaning, processing, and preprocessing
 
-<!-- CONTRIBUTING -->
-## Contributing
+## MySQL Schema
+    create schema mbc_training
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+## Data Cleaning
+Various Data Cleaning steps were done, such as filling nulls, removing duplicates, fixing data inconsistencies.
+## Data preprocessing
+The csv files contain Stringified JSON Columns, Each were exploded into their own DataFrame, where null structure was fixed and also keeping in mind each movie_id for foreign key purposes later on.
+## Data Processing
+The New DataFrames created were later inserted to the Database created
+## Linting
+Files were linted using pytest in order to check deployment quality insuring a score of 10/10
+## Unit Testing
+Each function created was unit tested with various test cases such as datatypes, functionality, and expected output
+## SQL Tables Creation
+* ERD
+* <div align="center">
+  <a href="https://github.com/GitQandil/mbc_training">
+    <img src="images/mbc_training.png" alt="Logo" width="2000" height="200">
+  </a>
+* Belongs to Collection table
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+        create table belongs_to_collection
+        (
+        id            int  not null
+        primary key,
+        movie_id      int  null,
+        collection_id int  null,
+        name          text null,
+        poster_path   text null,
+        backdrop_path text null,
+        constraint belongs_to_collection_movie_information_movie_id_fk
+        foreign key (movie_id) references movie_information (movie_id)
+        );
+* Cast table
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+      create table cast
+      (
+      id           int  not null
+      primary key,
+      movie_id     int  null,
+      cast_id      int  null,
+      `character`  text null,
+      credit_id    text null,
+      gender       text null,
+      actor_id     int  null,
+      name         text null,
+      `order`      int  null,
+      profile_path text null,
+      constraint cast_movie_information_movie_id_fk
+      foreign key (movie_id) references movie_information (movie_id)
+      );
+* Crew table
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+      create table crew
+      (
+      id           int  not null
+      primary key,
+      movie_id     int  null,
+      credit_id    text null,
+      department   text null,
+      gender       text null,
+      crew_id      int  null,
+      job          text null,
+      name         text null,
+      profile_path text null,
+      constraint crew_movie_information_movie_id_fk
+      foreign key (movie_id) references movie_information (movie_id)
+      );
+* Genres table
+
+        create table genres
+        (
+        id       int  not null
+        primary key,
+        movie_id int  null,
+        genre_id int  null,
+        name     text null,
+        constraint genres_movie_information_movie_id_fk
+        foreign key (movie_id) references movie_information (movie_id)
+        );
+
+* keywords table
+
+        create table keywords
+        (
+        id         int  not null
+        primary key,
+        movie_id   int  null,
+        keyword_id int  null,
+        name       text null,
+        constraint keywords_movie_information_movie_id_fk
+        foreign key (movie_id) references movie_information (movie_id)
+        );
+* Movie Information Table
+
+        create table movie_information
+        (
+        movie_id          int  not null
+        primary key,
+        title             text null,
+        original_title    text null,
+        adult             text null,
+        original_language text null,
+        homepage          text null,
+        overview          text null,
+        poster_path       text null,
+        tagline           text null,
+        status            text null,
+        release_date      date null,
+        imdb_id           int  null
+        );
+
+* Production Companies Table
+
+      create table production_company
+      (
+      id         int  not null
+      primary key,
+      movie_id   int  null,
+      name       text null,
+      company_id int  null,
+      constraint production_company_movie_information_movie_id_fk
+      foreign key (movie_id) references movie_information (movie_id)
+      );
+* Production Countries
+
+        create table production_countries
+        (
+        id         int  not null
+        primary key,
+        movie_id   int  null,
+        iso_3166_1 text null,
+        name       text null,
+        constraint production_countries_movie_information_movie_id_fk
+        foreign key (movie_id) references movie_information (movie_id)
+        );
+
+* Ratings
+
+      create table ratings
+      (
+      id       int      not null
+      primary key,
+      user_id  int      null,
+      movie_id int      null,
+      rating   float    null,
+      date     datetime null,
+      constraint ratings_movie_information_movie_id_fk
+      foreign key (movie_id) references movie_information (movie_id)
+      );
+* Spoken Languages
+
+        create table spoken_languages
+        (
+        id        int  not null
+        primary key,
+        movie_id  int  null,
+        iso_639_1 text null,
+        name      text null,
+        constraint spoken_languages_movie_information_movie_id_fk
+        foreign key (movie_id) references movie_information (movie_id)
+        );
 
 
+* Statistics
 
-<!-- LICENSE -->
-## License
+      create table statistics
+      (
+      id           int    not null
+      primary key,
+      movie_id     int    null,
+      budget       bigint null,
+      popularity   float  null,
+      revenue      double null,
+      vote_average float  null,
+      vote_count   bigint null,
+      constraint statistics_movie_information_movie_id_fk
+      foreign key (movie_id) references movie_information (movie_id)
+      );
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+## Inserting DataFrames to Database
+The DataFrames were inserted to the tables created
+## Docker Containerization
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -231,34 +386,11 @@ Use this space to list resources you find helpful and would like to give credit 
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[Python.py]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[Python-url]: https://www.python.org
+[Docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com/
+[MySQL]: https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white
+[MySQL-url]: https://www.mysql.com/
+[Kaggle-url]: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
+[Kaggle]:https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white
