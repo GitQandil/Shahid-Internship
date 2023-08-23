@@ -76,31 +76,23 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This Project applies multiple Data Engineering Concepts on the Movies Dataset on kaggle in order to create a database from multiple csv files and interconnect them for business reporting
-
-These concepts include:
-
-* EDA
-* ETL
-* Data Processing
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-
-* [![Python][Python.py]][Python-url]
-* [![MySQL][MySQL]][MySQL-url]
-* [![Docker][Docker]][Docker-url]
+In this project, the focus was on transforming the kaggle movies dataset. The processing involved extensive data cleaning, extraction of relevant JSON columns, and the establishment of a structured database. The final step included the seamless integration of refined dataframes into the database, facilitating comprehensive analysis.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- GETTING STARTED -->
+### Built With:
+
+[![Python][Python.py]][Python-url]
+
+[![MySQL][MySQL]][MySQL-url]
+
+[![Docker][Docker]][Docker-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Getting Started
 
 This Projects needs MySQL and Python Installation
@@ -139,9 +131,13 @@ This is an example of how to list things you need to use the software and how to
     ```sh
     brew install python
     ```
-* Download The movies Dataset from kaggle
+* Download The movies Dataset from kaggle 
 
-   [![Kaggle][Kaggle]][Kaggle-url]
+  <br />
+  
+  [![Kaggle][Kaggle]][Kaggle-url]
+
+
 * Context
 
     * These files contain metadata for all 45,000 movies listed in the Full MovieLens Dataset. 
@@ -364,33 +360,10 @@ The DataFrames were inserted to the tables created
 
 
 
-<!-- CONTACT -->
-## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
+## Summary
+Overall this project  focused on combining various related csv files into a unified database using pandas and mysql.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 [Python.py]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
