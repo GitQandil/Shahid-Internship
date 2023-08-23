@@ -1,4 +1,6 @@
-FROM ubuntu:latest
-LABEL authors="admin"
+FROM python
+WORKDIR ~/Desktop/last
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
-ENTRYPOINT ["top", "-b"]
+CMD ["python","./main.py"]
