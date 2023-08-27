@@ -1,3 +1,2 @@
-pandas~=2.0.3
-sqlalchemy~=2.0.19
-/Users/admin/Desktop/phase1_utilities
+pandas
+sqlalchemy
