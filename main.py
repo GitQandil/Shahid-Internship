@@ -107,8 +107,8 @@ def main():
     ratings_df.drop(to_drop, inplace=True)
 
     # inserting dataframes into database
-    engine = create_engine("mysql+pymysql://user:"
-                           f"{quote_plus('pass')}@localhost:port/dbname")
+    engine = create_engine("mysql+pymysql://root:"
+                           f"{quote_plus('9VT_DngnWXB7Li')}@localhost:3306/mbc_training")
 
     df_list = [movie_info, cast_df, crew_df,
                keywords_df, belongs_to_collection, genres_df,
