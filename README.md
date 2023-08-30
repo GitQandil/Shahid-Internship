@@ -60,9 +60,9 @@ In this project, the focus was on transforming the kaggle movies dataset. The pr
 * [![Python][Python.py]][Python-url]
   + [![Pandas][Pandas]][Pandas-url]
   + [![Spark][Spark]][Spark-url]
-
+####
 * [![MySQL][MySQL]][MySQL-url]
-
+####
 * [![Docker][Docker]][Docker-url]
 
 
