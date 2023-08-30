@@ -159,7 +159,7 @@ ERD
 <br />
 
   <a href="https://github.com/GitQandil/mbc_training">
-    <img src="images/mbc_training.png" alt="Logo" width="2000" height="280">
+    <img src="images/mbc_training.jpg" alt="Logo" width="2000" height="300">
   </a>
 </div>
 
@@ -329,6 +329,17 @@ The DataFrames were inserted into the tables created
 ## Docker Containerization
 
 
+## Creating a Data Warehouse
+
+<div align="center">
+Snowflake ERD
+<br />
+<br />
+
+  <a href="https://github.com/GitQandil/mbc_training">
+    <img src="images/snowflake.jpg" alt="Logo" width="1500" height="1200">
+  </a>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
