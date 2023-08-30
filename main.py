@@ -8,6 +8,7 @@ from urllib.parse import quote_plus
 import pandas as pd
 from sqlalchemy import create_engine
 from utilities import utils
+import pymysql
 
 
 def main():
@@ -120,15 +121,9 @@ def main():
                      'production_company', 'production_countries',
                      'spoken_languages', 'ratings', 'statistics']
 
-    flag = False
     for _, (target_df, target_table) in enumerate(zip(df_list, target_tables)):
-        if not flag:
-            target_df.to_sql(target_table, con=engine,
-                             if_exists='append', chunksize=10000, index=False)
-            flag = True
-        else:
-            target_df.to_sql(target_table, con=engine,
-                             if_exists='append', chunksize=10000, index_label='id')
+        target_df.to_sql(target_table, con=engine,
+                         if_exists='append', chunksize=10000, index_label='id')
 
 
 if __name__ == '__main__':
