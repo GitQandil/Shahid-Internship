@@ -53,7 +53,6 @@
 In this project, the focus was on transforming the kaggle movies dataset. The processing involved extensive data cleaning, extraction of relevant JSON columns, and the establishment of a structured database. The final step included the seamless integration of refined dataframes into the database, facilitating comprehensive analysis.
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -65,7 +64,6 @@ In this project, the focus was on transforming the kaggle movies dataset. The pr
 
 [![Docker][Docker]][Docker-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
 
@@ -133,7 +131,6 @@ This is an example of how to list things you need to use the software and how to
     
     * ratings_small.csv: The subset of 100,000 ratings from 700 users on 9,000 movies.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Utilities
 Utilities python file was created that has UDF's in order to automate the process of data cleaning, processing, and preprocessing
@@ -341,14 +338,9 @@ Snowflake ERD
   </a>
 </div>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 ## Summary
 The project centered around the transformation of the movies dataset into a valuable resource of analysis. Through various data engineering concepts, such as data cleaning, data extraction from JSON columns, and data processing. The creation of a structured database enabled the organized storage of this data. The culmination of the project involved integrating the refined dataframes seamlessly into the database, paving the way for in-depth analysis and insights.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 [Python.py]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
