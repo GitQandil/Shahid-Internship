@@ -57,12 +57,13 @@ In this project, the focus was on transforming the kaggle movies dataset. The pr
 
 
 ### Built With:
+* [![Python][Python.py]][Python-url]
+  + [![Pandas][Pandas]][Pandas-url]
+  + [![Spark][Spark]][Spark-url]
 
-[![Python][Python.py]][Python-url]
+* [![MySQL][MySQL]][MySQL-url]
 
-[![MySQL][MySQL]][MySQL-url]
-
-[![Docker][Docker]][Docker-url]
+* [![Docker][Docker]][Docker-url]
 
 
 ## Getting Started
@@ -351,3 +352,7 @@ The project centered around the transformation of the movies dataset into a valu
 [MySQL-url]: https://www.mysql.com/
 [Kaggle-url]: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
 [Kaggle]:https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white
+[Pandas-url]: https://pandas.pydata.org/
+[Pandas]: https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white
+[Spark-url]:https://spark.apache.org/
+[Spark]: https://img.shields.io/badge/Apache%20Spark-FDEE21?style=flat-square&logo=apachespark&logoColor=black
