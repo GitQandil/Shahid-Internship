@@ -86,6 +86,7 @@ This is an example of how to list things you need to use the software and how to
   mysql_secure_installation
   ```
 
+
   The procedure can take a while, but it gives a lot of power to make sure you get the best defaults out of the box
 
 * Since we used brew services start mysql to start MySQL, your laptop will re-start it at reboot. You can run:
